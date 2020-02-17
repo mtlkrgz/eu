@@ -1,0 +1,8 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="LINE_SEPARATOR" value="&#13;" />
+    <PHPCodeStyleSettings>
+      <option name="PHPDOC_USE_FQCN" value="true" />
+    </PHPCodeStyleSettings>
+  </code_scheme>
+</component>

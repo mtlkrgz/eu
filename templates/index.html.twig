@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}En Uygun Kurlar!{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+
+    <div class="container" style="padding-top: 150px">
+        <div class="container-fluid border  align-self-center mt-4">
+            <!-- Control the column width, and how they should appear on different devices -->
+            <div class="row b-1">
+                <div class="col-sm-12 text-center p-3 "><h1>En Uygun Kurlar</h1></div>
+            </div>
+
+            <div class="row p-3 bg-secondary border border-left-0 border-right-0">
+                <div class="col-sm-4 text-center font-weight-bold ">Dolar</div>
+                <div class="col-sm-4 text-center font-weight-bold">Euro</div>
+                <div class="col-sm-4 text-center font-weight-bold">Sterlin</div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm-4 text-center  ">{{ return.dolar|number_format(3,",",".") }} TL</div>
+                <div class="col-sm-4 text-center ">{{ return.euro|number_format(3,",",".") }} TL</div>
+                <div class="col-sm-4 text-center">{{ return.sterlin|number_format(3,",",".") }} TL</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+</body>
+</html>
