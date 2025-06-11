@@ -32,7 +32,7 @@ class ApiCurr extends AbstractController
             $Provider = $currService->provider(new $className());
 
 
-                $response = file_get_contents($Provider->getJsonUrl());;
+                $response = file_get_contents($Provider->getJsonUrl());
                 $response = json_decode($response, true);
 
 
