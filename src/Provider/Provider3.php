@@ -10,7 +10,8 @@ class Provider3 implements ProviderInterface{
     public function exchange()
     {
         $provider = new ProviderService();
-        $provider->setJsonUrl(__DIR__."/../../src/provider3.json");
+        // use the correct case for the local JSON file
+        $provider->setJsonUrl(__DIR__."/../../src/Provider3.json");
         $provider->setAmount("TLKarsiligi");
         $provider->setSymbol("kurAdi");
         $provider->setDolar("Usd");
